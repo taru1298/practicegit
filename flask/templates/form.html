@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Form</title>
+</head>
+<body>
+    <h1>Enter Your Marks</h1>
+    <form method="POST">
+        {% if error %}
+        <p style="color: red;">{{ error }}</p>
+        {% endif %}
+        <input type="text" name="maths" placeholder="Maths Marks" required>
+        <input type="text" name="science" placeholder="Science Marks" required>
+        <input type="text" name="social" placeholder="Social Marks" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
